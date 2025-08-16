@@ -4,7 +4,7 @@ require("dotenv").config();
 
 const config = {
   // 👑 Owner & Permissions
-  OWNER_NAME: process.env.OWNER_NAME || "Black-Tappy",
+  OWNER_NAME: process.env.OWNER_NAME || "XEON-XTECH~J3l3DD7J#qupcNeyVXREjqrj05tY7RY6FqTsjy_9f7a46xStnoj4",
   OWNER_NUMBER: process.env.OWNER_NUMBER || "254759000340",
   SUDO_NUMBER: process.env.SUDO_NUMBER || "254759000340",
   
