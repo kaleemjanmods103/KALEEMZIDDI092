@@ -1,0 +1,38 @@
+# This file describes how to deploy the XEON-XMD bot on Koyeb.
+# Koyeb will automatically detect this file and configure the deployment.
+# For more information, visit: https://www.koyeb.com/docs/deploy/koyeb-yaml
+
+name: xeon-xmd-bot # The name of the app on Koyeb
+
+services:
+  - name: xeon-xmd-worker # The name of the service
+    git:
+      repo: https://github.com/Black-Tappy/XEON-XMD.git # IMPORTANT: Change this to your forked repository URL
+      branch: main
+    
+    # This configuration uses the Dockerfile present in the repository.
+    # This is the recommended method as it ensures all system dependencies
+    # like ffmpeg, webp, and imagemagick are correctly installed.
+    docker:
+      dockerfile: Dockerfile
+
+    # Instance type for the service. 'free' is sufficient for most users.
+    instance_type: free
+
+    # Health check to ensure the bot is running correctly.
+    # The bot's web server must respond with a 200 OK status at this path.
+    health_checks:
+      - path: /ping
+        port: 3000 # This must match the port your app listens on
+        protocol: http
+
+    # Define the port the application's web server listens on.
+    # This allows Koyeb to route traffic to your service.
+    ports:
+      - port: 3000
+        protocol: http
+
+    env:
+      # --- Basic Bot Settings ---
+      - key: SESSION_ID
+        value:

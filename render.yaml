@@ -1,0 +1,81 @@
+services:
+  - type: web
+    name: xeon-xmd-bot
+    env: node
+    plan: free # Or your preferred plan
+    repo: https://github.com/Black-Tappy/XEON-XMD # Change this to your forked repo URL
+    branch: main # Or your default branch
+    buildCommand: 'npm install'
+    startCommand: 'node index.js'
+    envVars:
+      # ⚙️ Basic Bot Settings (SESSION_ID will be set in the dashboard)
+      - key: PREFIX
+        value: "."
+      - key: BOT_NAME
+        value: "Xeon-Xtech"
+      - key: OWNER_NAME
+        value: "Black-Tappy"
+      - key: MODE
+        value: "public"
+      - key: WELCOME
+        value: "false"
+
+      # 🤖 Automation Features
+      - key: AUTO_STATUS_SEEN
+        value: "true"
+      - key: AUTO_BIO
+        value: "true"
+      - key: AUTO_STATUS_REACT
+        value: "true"
+      - key: AUTOLIKE_EMOJI
+        value: "💚"
+      - key: AUTO_REPLY_STATUS
+        value: "false"
+      - key: STATUS_READ_MSG
+        value: "Status Viewed by Xeon-Xtech"
+      - key: VOICE_CHAT_BOT
+        value: "false"
+      - key: AUTO_STICKER
+        value: "false"
+      - key: AUTO_READ
+        value: "false"
+      - key: AUTO_TYPING
+        value: "false"
+      - key: AUTO_RECORDING
+        value: "false"
+      - key: ALWAYS_ONLINE
+        value: "false"
+      - key: AUTO_REACT
+        value: "false"
+
+      # 🛡️ Moderation & Group Management
+      - key: ANTI_LEFT
+        value: "true"
+      - key: ANTILINK
+        value: "false"
+      - key: ANTI_DELETE
+        value: "false"
+      - key: DELETED_MESSAGES_CHAT_ID
+        value: "254759000340@s.whatsapp.net"
+      - key: REJECT_CALL
+        value: "false"
+      - key: AUTO_BLOCK
+        value: "true"
+      - key: NOT_ALLOW
+        value: "true"
+      - key: MASS_TARGET_JID
+        value: "254759000340@s.whatsapp.net"
+      - key: BLOCK_UNKNOWN
+        value: "false"
+
+      # 💬 AI Chatbot Features
+      - key: CHAT_BOT
+        value: "false"
+      - key: CHAT_BOT_MODE
+        value: "public"
+      - key: CHATBOT_PRIVATE
+        value: "false"
+      - key: CHATBOT_GROUP
+        value: "false"
+      - key: LYDEA
+        value: "false"

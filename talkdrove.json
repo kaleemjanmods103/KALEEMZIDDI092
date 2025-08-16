@@ -1,0 +1,66 @@
+{
+    "bot-name": "XEON-XTECH",
+    "description": "Whiskey Sockets Baileys Whatsapp bot By Black-Tappy",
+    "logo": "https://files.catbox.moe/mbnjxn.jpg",
+    "keywords": ["bot"],
+    "documentation-link": "https://xeon-xtech-pair-case.onrender.com/pair",
+    "owner-verification": "blacktappy9@gmail.com",
+  
+    "env": {
+      "SESSION_ID": {
+        "description": "Put your SESSION_ID here.get session id from here, https://inconnu-boy-tech-bot.onrender.com/pair",
+        "required": true,
+        "value":"add your session"
+      },
+      "PREFIX": {
+        "description": "Bot command prefix, (e.g, . , ! @ etc",
+        "required": true,
+        "value":"."
+      },
+    
+    "MODE": {
+      "description": "select your bot work type public-private-inbox-group.",
+      "required": false,
+      "value": "public"
+      
+    },
+    
+    "OWNER_NAME": {
+      "description": "Type Bot Owner Name.",
+      "required": false,
+      "value": "Black-Tappy"
+}, 
+
+    "OWNER_NUMBER": {
+      "description": "put the owner number for bot.",
+      "required": false,
+      "value": "254759000340"
+
+    }, 
+
+    "AUTO_REACT": {
+      "description": "Make it true if you want react on every message.",
+      "required": true,
+      "value": "false"
+
+    }, 
+    "OWNER_REACT": {
+    "description": "Make it true if you want reactions on your number",
+    "required": true,
+    "value": "false"
+    },
+    
+    "ANTI_DELETE": {
+      "description": "MAKE IT TRUE IF YOU WANT TO RECOVER DELETED MSGS",
+      "required": false,
+      "value": "true"
+    }, 
+
+    "DELETE_PATH": {
+      "description": "YOUR ACCORDING IF YOU WANT TO SEND DELETED MSG WHERE SAME OR PM.",
+      "required": true,
+      "value": "pm"
+    }
+  }
+    }
+      
