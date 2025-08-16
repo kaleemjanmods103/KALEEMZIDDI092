@@ -1,5 +1,5 @@
 {
-  "name": "KALEEM-XTECH",
+  "name": "XEON-XTECH",
   "description": "✨🏷️ Javascript Bot WhatsApp Multi-Bot | XEON-XTECH | Auto Mods + AI + Fun Tools + Media",
   "logo": "https://files.catbox.moe/2p885c.jpg",
   "keywords": [
@@ -139,7 +139,7 @@
     "BOT_NAME": {
       "description": "Customize bot's display name",
       "required": false,
-      "value": "KALEEM-XTECH"
+      "value": "XEON-XTECH"
     }
   },
   "buildpacks": [
